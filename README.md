@@ -5,10 +5,16 @@ A simple script to copy the contents of a file to the clipboard using `wl-copy` 
 Tested only on Debian 12 (GNOME 43.9). Requires `wl-copy`  to be installed.
 
 ## Installation
-Run 
+### Curl 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -o ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
+curl -fSL https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -o ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
 ```
+
+### wget 
+```bash
+wget https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -O ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
+```
+
 Make sure `~/.local/bin` is in your `PATH`.
 
 ## Usage
