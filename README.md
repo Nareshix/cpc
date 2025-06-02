@@ -10,6 +10,7 @@ Tested only on Debian 12 (GNOME 43.9). Requires `wl-copy`  to be installed.
 ```bash
 wget https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -O ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
 ```
+### or
 
 ### 2. Curl 
 ```bash
