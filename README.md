@@ -1,8 +1,10 @@
-[Installation](#installation)
-[Usage](#Usage)
-[Uninstall](#Uninstall)
 
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Uninstall](#uninstall)
 
+  
 # Cpc
 A simple script to copy the contents of a file to the clipboard using `wl-copy` on Wayland
 
