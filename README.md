@@ -61,7 +61,7 @@ name is
 Naresh
 and naresh is awesome
 ```
-and is also saved to ur clipboard (can use ```ctrl + v``` to start pasting)
+The text file content then gets saved to ur clipboard (can use ```ctrl + v``` to start pasting)
 
 
 ## Uninstall
