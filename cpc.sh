@@ -16,6 +16,7 @@ fi
 
 if cat "$filename" | wl-copy; then
     echo "Copied:"
+    echo
     cat "$filename"
 else
     echo "Error: failed to copy to clipboard."
