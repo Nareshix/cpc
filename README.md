@@ -1,3 +1,8 @@
+[Installation](#installation)
+[Usage](#Usage)
+[Uninstall](#Uninstall)
+
+
 # Cpc
 A simple script to copy the contents of a file to the clipboard using `wl-copy` on Wayland
 
@@ -55,3 +60,10 @@ Naresh
 and naresh is awesome
 ```
 and is also saved to ur clipboard (can use ```ctrl + v``` to start pasting)
+
+
+## Uninstall
+run 
+```bash
+rm ~/.local/bin/cpc
+```
