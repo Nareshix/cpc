@@ -6,13 +6,13 @@ Tested only on Debian 12 (GNOME 43.9). Requires `wl-copy`  to be installed.
 
 ## Installation
 
-### 1. Wget 
+### Wget 
 ```bash
 wget https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -O ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
 ```
 ### or
 
-### 2. Curl 
+### Curl 
 ```bash
 curl -fSL https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -o ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
 ```
