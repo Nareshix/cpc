@@ -35,7 +35,7 @@ cpc <filename>
 
 Copies the contents of `<filename>` to your clipboard and prints the content.
 
-Example:
+### Example:
 
 `notes.txt` contains
 ```
