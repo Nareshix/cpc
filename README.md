@@ -1,15 +1,26 @@
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
+- [Installation](#installation)
 - [Uninstall](#uninstall)
 
-  
-# Cpc
-A simple script to copy the contents of a file to the clipboard using `wl-copy` on Wayland
 
-## Note
-Tested only on Debian 12 (GNOME 43.9). Requires `wl-copy`  to be installed.
+### note
+Tested only on Debian 12 (GNOME 43.9). Requires `wl-copy`  to be installed. 
+## Usage
+
+cpc <file_or_directory> [--exclude <file/folder>]...
+
+- Copies file content if input is a file.
+
+- Copies all files recursively (subfolders as well) if input is a directory
+
+- can exclude a file or a folder (--exclude <file> or --exclude <folder>)
+
+- Errors if input is neither file nor directory.
+
+The text file content then gets saved to ur clipboard (can use ```ctrl + v``` to start pasting)
+
 
 ## Installation
 
@@ -24,44 +35,7 @@ wget https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -O ~/.local/bin/
 curl -fSL https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -o ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
 ```
 
-
 Make sure `~/.local/bin` is in your `PATH`.
-
-## Usage
-
-```bash
-cpc <filename>
-```
-
-Copies the contents of `<filename>` to your clipboard and prints the content.
-
-### Example:
-
-`notes.txt` contains
-```
-hello
-there
-my
-name is
-Naresh
-and naresh is awesome
-```
-Running
-```bash
-cpc notes.txt
-```
-outputs:
-```
-Copied:
-
-hello
-there
-my
-name is
-Naresh
-and naresh is awesome
-```
-The text file content then gets saved to ur clipboard (can use ```ctrl + v``` to start pasting)
 
 
 ## Uninstall
