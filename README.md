@@ -9,7 +9,7 @@
 Tested only on Debian 12 (GNOME 43.9). Requires `wl-copy`  to be installed. 
 ## Usage
 
-cpc <file_or_directory> [--exclude <file/folder>, --tree <dir>]
+cpc <file_or_directory> [--exclude (file/folder), --tree (dir)]
 
 - Copies file content if input is a file.
 
