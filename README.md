@@ -28,13 +28,13 @@ The text file content then gets saved to ur clipboard (can use ```ctrl + v``` to
 
 ### Wget 
 ```bash
-wget https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -O ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
+wget https://raw.githubusercontent.com/nareshix/cpc/main/cpc.py -O ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
 ```
 ### or
 
 ### Curl 
 ```bash
-curl -fSL https://raw.githubusercontent.com/nareshix/cpc/main/cpc.sh -o ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
+curl -fSL https://raw.githubusercontent.com/nareshix/cpc/main/cpc.py -o ~/.local/bin/cpc && chmod +x ~/.local/bin/cpc
 ```
 
 Make sure `~/.local/bin` is in your `PATH`.
