@@ -3,6 +3,7 @@
 # Collect excludes and main input
 excludes=()
 args=()
+use_tree=0
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -10,12 +11,35 @@ while [[ $# -gt 0 ]]; do
             shift
             excludes+=("$1")
             ;;
+        --tree)
+            use_tree=1
+            ;;
         *)
             args+=("$1")
             ;;
     esac
     shift
 done
+if [ "$use_tree" -eq 1 ]; then
+    if [ "${#args[@]}" -ne 1 ]; then
+        echo "Usage: cpc --tree <directory>"
+        exit 1
+    fi
+    input="${args[0]}"
+    if [ ! -d "$input" ]; then
+        echo "Error: '$input' is not a directory."
+        exit 1
+    fi
+
+    tree "$input" | wl-copy && {
+        echo "Copied tree output of directory '$input' to clipboard."
+    } || {
+        echo "Error: failed to copy tree output."
+        exit 1
+    }
+    exit 0
+fi
+
 
 if [ "${#args[@]}" -ne 1 ]; then
     echo "Usage: cpc <file_or_directory> [--exclude <pattern>]..."
